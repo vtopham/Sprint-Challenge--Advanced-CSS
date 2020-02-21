@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +162,26 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+nav h1 {
+  margin: 1% 0;
+}
+nav .links {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+nav .links a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #5E6164;
 }
 footer {
   color: #22283B;
@@ -175,6 +198,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .from-space {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
