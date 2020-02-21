@@ -2,8 +2,8 @@
 
 nav {
 
-    display: flex;
-    flex-direction: column;
+   
+    .letsFlex(column);
     align-items: center;
 
 
@@ -11,14 +11,18 @@ nav {
 
     h1 {
         margin: 1% 0;
+
     }
 
     .links {
-        display: flex;
+        .letsFlex();
         width: 30%;
         justify-content: space-between;
-
         margin-bottom: 1%;
+
+        @media @phone {
+            width: 80%;
+        }
 
 
         a {
@@ -26,5 +30,7 @@ nav {
             text-decoration: none;
             color: @main-font-color;
         }
+
+        
     }
 }
