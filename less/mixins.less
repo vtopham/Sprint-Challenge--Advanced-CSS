@@ -3,3 +3,21 @@
 .help() {
     border: 1px solid red;
 }
+
+.btnStyle(@width, @height, @bg-color, @font-color) {
+    height: @height;
+    width: @width;
+    background-color: @bg-color;
+    color: @font-color;
+
+    border-radius: 5px;
+    line-height: @height;
+
+    font-size: 1.6rem;
+    text-align: center;
+
+    &:hover{
+        color: @bg-color;
+        background-color: @font-color;
+    }
+}
