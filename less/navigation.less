@@ -1,1 +1,40 @@
 // Navigation code here
+
+nav {
+    height: 100px;
+    width: 100%;
+    opacity: .75;
+
+    position: fixed;
+    top: 0;
+   
+    .letsFlex(column);
+    align-items: center;
+
+
+    background-color: @nav-bg;
+
+    h1 {
+        margin: 1% 0;
+
+    }
+
+    .links {
+        .letsFlex();
+        width: 30%;
+        justify-content: space-between;
+        margin-bottom: 1%;
+
+        @media @phone {
+            width: 80%;
+        }
+
+
+        a {
+            font-size: 1.6rem;
+            .fixLinks();
+        }
+
+        
+    }
+}
